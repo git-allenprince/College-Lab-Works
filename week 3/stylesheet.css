@@ -1,0 +1,180 @@
+#comp-kkr1kfyd {
+    width: 980px;
+}
+#comp-kkr1kfyd {
+    --fill-layer-image-opacity: 0.65;
+    --fill-layer-background-media-position: fixed;
+    --fill-layer-background-media-pointer-events: none;
+    --bg-overlay-color: rgb(var(--color_15));
+    --bg-gradient: none;
+    width: 100%;
+    --column-width: 980px;
+    --column-flex: 980;
+}
+
+:host(:not(.device-mobile-optimized)) .V5AUxf>*, body:not(.device-mobile-optimized) .V5AUxf>* {
+    flex: var(--column-flex) 1 0%;
+    left: 0;
+    margin-bottom: var(--padding);
+    margin-top: var(--padding);
+    min-width: 0;
+    position: relative;
+    top: 0;
+}
+.YzqVVZ {
+    overflow: visible;
+    position: relative;
+}
+a, abbr, acronym, address, applet, b, big, blockquote, button, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, footer, form, h1, h2, h3, h4, h5, h6, header, i, iframe, img, ins, kbd, label, legend, li, nav, object, ol, p, pre, q, s, samp, section, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, title, tr, tt, u, ul, var {
+    background: transparent;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+#comp-kkr1kfwk {
+    --bg-overlay-color: transparent;
+    --bg-gradient: none;
+    --padding: 0px;
+    --margin: 0px;
+    min-width: 980px;
+    --firstChildMarginTop: -1px;
+    --lastChildMarginBottom: -1px;
+    --items-direction: row;
+}
+[data-mesh-id$=-gridContainer]>*, [data-mesh-id$=-rotated-wrapper]>*, [data-mesh-id$=inlineContent]>:not([data-mesh-id$=-gridContainer]) {
+    pointer-events: auto;
+}
+[data-mesh-id$=centeredContent], [data-mesh-id$=form], [data-mesh-id$=inlineContent] {
+    pointer-events: none;
+    position: relative;
+}
+#comp-lt8qptn0 {
+    --bg-overlay-color: transparent;
+    --bg-gradient: none;
+    min-width: 980px;
+}
+.SPY_vo {
+    pointer-events: none;
+}
+#SITE_PAGES {
+    --transition-duration: 700ms;
+}
+#PAGES_CONTAINER {
+    --pinned-layer-in-container: 50;
+    --above-all-in-container: 49;
+}
+#masterPage:not(.landingPage) {
+    --top-offset: var(--header-height);
+    --header-height: 141px;
+}
+#masterPage {
+    --pinned-layers-in-page: 0;
+}
+body {
+    --scrollbar-width: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+:root, :host, .spxThemeOverride {
+    --color_0: 255, 255, 255;
+    --color_1: 255, 255, 255;
+    --color_2: 0, 0, 0;
+    --color_3: 237, 28, 36;
+    --color_4: 0, 136, 203;
+    --color_5: 255, 203, 5;
+    --color_6: 114, 114, 114;
+    --color_7: 176, 176, 176;
+    --color_8: 255, 255, 255;
+    --color_9: 114, 114, 114;
+    --color_10: 176, 176, 176;
+    --color_11: 247, 247, 247;
+    --color_12: 222, 222, 222;
+    --color_13: 179, 179, 179;
+    --color_14: 87, 87, 87;
+    --color_15: 0, 0, 0;
+    --color_16: 241, 185, 161;
+    --color_17: 228, 148, 114;
+    --color_18: 204, 61, 0;
+    --color_19: 143, 43, 0;
+    --color_20: 71, 21, 0;
+    --color_21: 122, 163, 176;
+    --color_22: 74, 122, 137;
+    --color_23: 8, 76, 97;
+    --color_24: 8, 64, 82;
+    --color_25: 4, 40, 51;
+    --color_26: 255, 236, 214;
+    --color_27: 244, 213, 176;
+    --color_28: 232, 174, 104;
+    --color_29: 174, 131, 78;
+    --color_30: 116, 87, 52;
+    --color_31: 177, 211, 187;
+    --color_32: 127, 168, 139;
+    --color_33: 64, 124, 81;
+    --color_34: 43, 83, 54;
+    --color_35: 21, 41, 27;
+    --color_36: 247, 247, 247;
+    --color_37: 0, 0, 0;
+    --color_38: 222, 222, 222;
+    --color_39: 179, 179, 179;
+    --color_40: 87, 87, 87;
+    --color_41: 204, 61, 0;
+    --color_42: 0, 0, 0;
+    --color_43: 179, 179, 179;
+    --color_44: 247, 247, 247;
+    --color_45: 0, 0, 0;
+    --color_46: 0, 0, 0;
+    --color_47: 222, 222, 222;
+    --color_48: 204, 61, 0;
+    --color_49: 204, 61, 0;
+    --color_50: 247, 247, 247;
+    --color_51: 247, 247, 247;
+    --color_52: 204, 61, 0;
+    --color_53: 204, 61, 0;
+    --color_54: 179, 179, 179;
+    --color_55: 179, 179, 179;
+    --color_56: 247, 247, 247;
+    --color_57: 247, 247, 247;
+    --color_58: 204, 61, 0;
+    --color_59: 204, 61, 0;
+    --color_60: 204, 61, 0;
+    --color_61: 204, 61, 0;
+    --color_62: 247, 247, 247;
+    --color_63: 247, 247, 247;
+    --color_64: 179, 179, 179;
+    --color_65: 179, 179, 179;
+    --font_0: normal normal normal 76px / 1.4em dinneuzeitgroteskltw01-_812426, sans-serif;
+    --font_1: normal normal normal 16px / 1.4em din-next-w01-light, din-next-w02-light, din-next-w10-light, sans-serif;
+    --font_2: normal normal normal 50px / 1.4em dinneuzeitgroteskltw01-_812426, sans-serif;
+    --font_3: normal normal normal 30px / 1.4em roboto-bold, roboto, sans-serif;
+    --font_4: normal normal normal 21px / 1.4em dinneuzeitgroteskltw01-_812426, sans-serif;
+    --font_5: normal normal normal 18px / 1.4em roboto-bold, roboto, sans-serif;
+    --font_6: normal normal normal 16px / 1.4em dinneuzeitgroteskltw01-_812426, sans-serif;
+    --font_7: normal normal bold 24px / 1.4em roboto-thin, roboto, sans-serif;
+    --font_8: normal normal bold 16px / 1.4em roboto-thin, roboto, sans-serif;
+    --font_9: normal normal bold 14px / 1.4em roboto-thin, roboto, sans-serif;
+    --font_10: normal normal normal 12px / 1.4em din-next-w01-light, din-next-w02-light, din-next-w10-light, sans-serif;
+    --wix-ads-height: 0px;
+    --sticky-offset: 0px;
+    --wix-ads-top-height: 0px;
+    --site-width: 980px;
+    --above-all-z-index: 100000;
+    --portals-z-index: 100001;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    --minViewportSize: 320;
+    --maxViewportSize: 1920;
+    --theme-spx-ratio: 1px;
+}
+@supports (container-type:inline-size)
+:root {
+    --one-unit: 1cqw;
+}
+:root {
+    --one-unit: 1vw;
+}

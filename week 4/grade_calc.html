@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grade Calculator</title>
+</head>
+<body>
+
+<h2>Grade Calculator</h2>
+
+<div>
+  <label for="numOfStudents">Number of Students:</label>
+  <input type="number" id="numOfStudents">
+  <button onclick="generateGradeInputs()">Enter Grades</button>
+</div>
+
+<div id="gradesInput"></div>
+
+<button onclick="calculateGradesAndAverage()">Calculate</button>
+
+<div id="output"></div>
+
+<script>
+  // Function to generate input fields for entering grades
+  function generateGradeInputs() {
+      const numOfStudents = parseInt(document.getElementById("numOfStudents").value);
+      const gradesInputDiv = document.getElementById("gradesInput");
+      gradesInputDiv.innerHTML = "";
+
+      for (let i = 1; i <= numOfStudents; i++) {
+          const gradeInput = document.createElement("input");
+          gradeInput.setAttribute("type", "number");
+          gradeInput.setAttribute("placeholder", "Mark for student " + i);
+          gradeInput.setAttribute("id", "grade" + i);
+          gradesInputDiv.appendChild(gradeInput);
+          gradesInputDiv.appendChild(document.createElement("br"));
+      }
+  }
+
+  // Function to calculate grades and average grade
+  function calculateGradesAndAverage() {
+      const numOfStudents = parseInt(document.getElementById("numOfStudents").value);
+
+      if (isNaN(numOfStudents) || numOfStudents <= 0) {
+          document.getElementById("output").innerHTML = "Invalid input. Please enter a valid number of students.";
+          return;
+      }
+
+      let totalGrade = 0;
+      let gradesInput = "";
+
+      for (let i = 1; i <= numOfStudents; i++) {
+          const mark = parseFloat(document.getElementById("grade" + i).value);
+
+          if (isNaN(mark) || mark < 0 || mark > 100) {
+              document.getElementById("output").innerHTML = "Invalid input for student " + i + ". Please enter a valid mark between 0 and 100.";
+              return;
+          }
+
+          let grade = "";
+
+          if (mark >= 90) {
+              grade = "A";
+          } else if (mark >= 70) {
+              grade = "B";
+          } else if (mark >= 50) {
+              grade = "C";
+          } else if (mark >= 30) {
+              grade = "D";
+          } else {
+              grade = "F";
+          }
+
+          gradesInput += "Grade for student " + i + ": " + grade + "<br>";
+          totalGrade += getGradePoint(grade);
+      }
+
+      const averageGrade = totalGrade / numOfStudents;
+
+      document.getElementById("output").innerHTML = gradesInput + "<br> Average grade of the class: " + getLetterGrade(averageGrade);
+  }
+
+  // Function to get grade point from letter grade
+  function getGradePoint(grade) {
+      switch (grade) {
+          case "A":
+              return 4.0;
+          case "B":
+              return 3.0;
+          case "C":
+              return 2.0;
+          case "D":
+              return 1.0;
+          default:
+              return 0.0;
+      }
+  }
+
+  // Function to convert grade point to letter grade
+  function getLetterGrade(gradePoint) {
+      if (gradePoint >= 3.5) {
+          return "A";
+      } else if (gradePoint >= 2.5) {
+          return "B";
+      } else if (gradePoint >= 1.5) {
+          return "C";
+      } else if (gradePoint >= 0.5) {
+          return "D";
+      } else {
+          return "F";
+      }
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sum of Array & Bubble Sort</title>
+</head>
+<body>
+
+<script>
+  // Function to calculate the sum of an array
+  function arraySum(arr) {
+      let sum = 0;
+      for (let i = 0; i < arr.length; i++) {
+          sum += arr[i];
+      }
+      return sum;
+  }
+
+  // Function to perform Bubble Sort
+  function bubbleSort(arr) {
+      const n = arr.length;
+      for (let i = 0; i < n - 1; i++) {
+          for (let j = 0; j < n - i - 1; j++) {
+              if (arr[j] > arr[j + 1]) {
+                  // Swap arr[j] and arr[j+1]
+                  let temp = arr[j];
+                  arr[j] = arr[j + 1];
+                  arr[j + 1] = temp;
+              }
+          }
+      }
+  }
+
+  // Function to calculate sum and display result
+  function calculateSum() {
+      // Get user input
+      const inputNumbers = document.getElementById("numbers").value.trim().split(" ").map(Number);
+
+      // Check if input is valid
+      if (inputNumbers.some(isNaN)) {
+          alert("Please enter valid numbers separated by spaces.");
+          return;
+      }
+
+      // Calculate sum of the array
+      const sum = arraySum(inputNumbers);
+
+      // Display the sum
+      document.getElementById("sumResult").innerText = "Sum of the array: " + sum;
+  }
+
+  // Function to sort array and display result
+  function sortArray() {
+      // Get user input
+      const inputNumbers = document.getElementById("numbers").value.trim().split(" ").map(Number);
+
+      // Check if input is valid
+      if (inputNumbers.some(isNaN)) {
+          alert("Please enter valid numbers separated by spaces.");
+          return;
+      }
+
+      // Sort the array using Bubble Sort
+      bubbleSort(inputNumbers);
+
+      // Display the sorted array
+      document.getElementById("sortResult").innerText = "Sorted array: " + inputNumbers.join(', ');
+  }
+</script>
+
+<h2>Enter numbers separated by space:</h2>
+<input type="text" id="numbers" placeholder="e.g., 5 2 9 1 5">
+<br><br>
+<button onclick="calculateSum()">Calculate Sum</button>
+<button onclick="sortArray()">Sort Array</button>
+
+<p id="sumResult"></p>
+<p id="sortResult"></p>
+
+</body>
+</html>
