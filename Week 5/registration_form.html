@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form id="register" onsubmit="return ValidateForm()">
+        <label for="userid">User id:</label> 
+        <input type="text" id="userid" name="userid" required ><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required ><br><br>
+
+        <label for="name">Name:</label> 
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="address">Address:</label> 
+        <input type="text" id="address" name="address"><br><br>
+
+        <label for="country">Country:</label> 
+        <select id="country" name="country" required>
+            <option value="">Select a country</option>
+            <option value="India">India</option>
+            <option value="UAE">UAE</option>
+            <option value="Switzerland">Switzerland</option>
+            <option value="Canada">Canada</option>
+        </select>
+        <br><br>
+        <label for="zipcode">Zip Code:</label> 
+        <input type="number" id="zipcode" name="zipcode" required><br><br>
+
+        <label for="email">Email:</label> 
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="sex">Sex:</label> 
+        <input type="radio" id="male" name="sex" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="sex" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label>Language:</label> 
+        <input type="checkbox" id="english" name="language" value="english">
+        <label for="english">English</label>
+        <input type="checkbox" id="nonenglish" name="language" value="nonenglish">
+        <label for="nonenglish">Non-English</label><br><br>
+
+        <label for="about">About:</label> 
+        <textarea id="about" name="about" rows="4" cols="50"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function ValidateForm(){
+            const userid=document.getElementById("userid").value;
+            const password=document.getElementById("password").value;
+            const name=document.getElementById("name").value;
+            const address=document.getElementById("address").value;
+            const country=document.getElementById("country").value;
+            const zipcode=document.getElementById("zipcode").value;
+            const email=document.getElementById("email").value;
+            const sex=document.querySelector('input[name="sex"]:checked');
+            const language=document.querySelector('input[name="language"]:checked');
+            
+        
+
+        if(userid.length<5||userid.length>12){
+            alert("User Id must be between 5 and 12 characters!");
+            return false;
+        }
+        if(password.length<7||password.length>12){
+            alert("Password must be between 5 and 12 characters!");
+            return false;
+        }
+
+        if(!name.match(/^[a-zA-Z ]+$/)){
+            alert("Name must contain only alphabets!");
+            return false;
+        }
+
+        if(country===""){
+            alert("Please select a country!");
+            return false;
+        }
+
+        if(!zipcode.match(/^[0-9]+$/)){
+            alert("Zip Code must contain only numeric characters!");
+            return false;
+        }
+        
+        if(!sex){
+            alert("Please select a gender!");
+            return false;
+        }
+
+        if(!language){
+            alert("Please select a language!");
+            return false;
+        }
+
+        alert("Form submitted successfully!");
+        return true;
+    }
+    </script>
+</body>
+</html>
