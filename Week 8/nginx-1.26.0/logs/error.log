@@ -1,0 +1,10 @@
+2024/05/15 06:12:45 [emerg] 4520#20072: bind() to 0.0.0.0:80 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2024/05/15 06:13:19 [emerg] 6992#8792: bind() to 0.0.0.0:80 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2024/05/15 06:13:43 [emerg] 15424#12396: bind() to 0.0.0.0:80 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2024/05/15 06:20:05 [emerg] 9292#9740: bind() to 0.0.0.0:80 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2024/05/15 11:52:38 [emerg] 8232#8428: bind() to 0.0.0.0:80 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2024/05/15 11:55:04 [emerg] 11920#12836: bind() to 0.0.0.0:80 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2024/05/15 12:03:27 [notice] 14064#14228: signal process started
+2024/05/15 12:06:00 [emerg] 16312#8180: host not found in "somename:8080" of the "listen" directive in C:\Users\student.CCF015\Desktop\ALLEN PRINCE S6 CU\Week 8\nginx-1.26.0/conf/nginx.conf:86
+2024/05/15 12:07:19 [emerg] 14088#15232: bind() to 0.0.0.0:135 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2024/05/15 12:08:31 [emerg] 3212#5328: bind() to 0.0.0.0:445 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
